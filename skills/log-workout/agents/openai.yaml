@@ -1,0 +1,3 @@
+interface:
+  display_name: "Log Workout"
+  short_description: "Safely log completed work using the shared Tana contract"

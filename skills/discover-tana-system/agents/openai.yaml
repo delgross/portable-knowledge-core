@@ -1,0 +1,3 @@
+interface:
+  display_name: "Discover Tana System"
+  short_description: "Turn a Tana workspace into a portable system contract"

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Retrieve Workout Plan"
+  short_description: "Read the next workout using the shared Tana contract"
