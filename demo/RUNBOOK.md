@@ -2,35 +2,41 @@
 
 ## Prepared ahead
 
-- Public repository and both client connections verified.
+- Public repository and established ChatGPT/Codex connection verified; Claude Mobile
+  remains gated on the rehearsal below.
 - Sanitized Build Session workspace and exact demo scope verified.
 - Planned workout, exercise vocabulary, frozen inspection, and workout report prepared.
 - Successful screenshots or short recordings captured at every tool-dependent transition.
 
-## Required Claude Mobile rehearsal
+## Dual mobile-client rehearsal
 
-Treat this as a validation path to test before the event, not as a capability already
-verified in this demo environment.
+The ChatGPT/Codex mobile path through Tana remote MCP is already established. Rehearse
+it against the sanitized Build Session fixture and capture a fresh fallback recording.
 
-1. On `claude.ai`, open **Settings > Connectors** on the same Claude account used by
-   Claude Mobile.
-2. Add and authenticate the Tana remote MCP connector there, then enable it.
+Claude Mobile is a required rehearsal path, not a capability already verified in the
+current account setup. The account-level connector setup has not yet completed
+successfully.
+
+1. In Claude Desktop or on `claude.ai`, using the same Claude account as Claude Mobile,
+   add `https://home.tana.inc/mcp` as a custom connector.
+2. Authenticate and enable the connector there.
 3. Open Claude for iOS or Android. A new remote server cannot be added directly from
    Claude Mobile.
 4. Confirm that the previously configured connector is available on mobile.
-5. Run the same bounded Tana discovery and workout-plan retrieval used in the desktop
-   demo. Keep the test read-only; do not use mobile for the live workout write unless a
-   separate write rehearsal passes.
-6. Capture screenshots or a short recording and record the app version, device, account
+5. Run the same bounded architecture discovery, contract-guided interpretation, and
+   workout-plan retrieval used in the ChatGPT/Codex mobile path.
+6. Generate the same workout logging preview from the frozen report. Do not perform a
+   Claude Mobile write unless a separate preview-confirm-write-readback rehearsal passes.
+7. Capture screenshots or a short recording and record the app version, device, account
    plan, connector state, and result.
 
 Acceptance requires a fresh Tana read, contract-guided interpretation, and retrieval of
-the exact demo workout plan. If any step fails, omit the live mobile segment and present
-it as a future portability path with the captured failure boundary.
+the exact demo workout plan. If any step fails, omit the live Claude Mobile segment and
+present it as a future portability path with the captured failure boundary.
 
 Plan assumptions to verify during rehearsal: Anthropic documents custom remote MCP
 connectors for Pro, Max, Team, and Enterprise plans. Team and Enterprise organizations
-may require an owner to enable the connector for the organization.
+may require an Owner or Primary Owner to add the organization connector.
 
 ## Live sequence
 
@@ -39,19 +45,29 @@ may require an owner to enable the connector for the organization.
 3. Generate `TANA_SYSTEM.md` and compare it with the template.
 4. Open the same file in a second client and ask it to explain the demo system.
 5. Retrieve the planned workout through `retrieve-workout-plan`.
-6. Use the frozen voice transcript if live capture is unclear.
-7. Run `log-workout`, show the exact preview, approve one bounded write, and read it back.
-8. Close by showing that the updated workout can be summarized from Tana.
+6. On ChatGPT/Codex mobile, repeat the discovery/contract-guided workout retrieval and
+   produce a logging preview from the workout report.
+7. If the Claude Mobile rehearsal passes, repeat the same portable workflow on Claude
+   Mobile using the connector already configured on the same account. This is not a
+   connector-setup demonstration.
+8. Compare the two results by shared contract and Tana behavior, not by product ranking.
+9. Choose one rehearsed client for the single bounded write: show the exact preview,
+   obtain explicit confirmation, write, and read back every created relationship.
+10. Use the other mobile client to retrieve or summarize the updated workout from Tana.
+11. Close on the portable pattern: one Tana source, one shared contract, multiple clients.
 
-If the Claude Mobile rehearsal passes, insert a short portability proof after step 5:
-open the same Claude account on mobile and repeat the read-only workout retrieval using
-the already configured connector. This is not a connector-setup demonstration.
+Use the frozen voice transcript if live capture is unclear. Never let either client skip
+the preview-confirm-write-readback boundary, and never perform duplicate demonstration
+writes.
 
 ## Fallback order
 
 1. Retry one bounded read once.
 2. Use the frozen inspection or report.
-3. Show the prepared write preview without writing.
-4. Play the corresponding sub-20-second recording.
+3. If Claude Mobile setup or retrieval is still incomplete, show its prepared fallback
+   and state that the current account path remains unverified.
+4. Continue the live mobile proof with the established ChatGPT/Codex path.
+5. Show the prepared write preview without writing.
+6. Play the corresponding sub-20-second recording.
 
 Never troubleshoot authentication, repository indexing, or connector installation on stage.
