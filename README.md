@@ -1,7 +1,7 @@
-# Portable Tana
+# One Tana System, Multiple AI Clients
 
-Portable Tana helps you teach an AI what **your** Tana system means, save that
-understanding in a versioned file, and reuse it across AI clients.
+This starter kit helps you teach an AI what **your** Tana system means, save that
+understanding in a versioned file, and reuse the same system across AI clients.
 
 It does not install a predefined productivity system. The discovery skill inspects a
 bounded workspace, separates observed structure from inferred intent, asks the owner

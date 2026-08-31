@@ -1,4 +1,4 @@
-# System Lab 11 demo runbook
+# System Lab 11: One Tana System, Multiple AI Clients
 
 ## Prepared ahead
 
@@ -50,7 +50,7 @@ may require an Owner or Primary Owner to add the organization connector.
 ## Live account and data boundaries
 
 - Use only the Thought of Waves Claude account and the demo Tana account.
-- Use only the sanitized public Portable Tana repository as GitHub context; do not
+- Use only the sanitized public event repository as GitHub context; do not
   connect or reveal a private repository.
 - Hide passwords, tokens, authentication screens, account recovery details,
   notifications, private workspaces, and personal data from the shared screen.
@@ -66,7 +66,7 @@ may require an Owner or Primary Owner to add the organization connector.
 3. Generate `TANA_SYSTEM.md` and compare it with the template.
 4. In the Thought of Waves Claude account, demonstrate adding the Tana Outliner remote
    MCP custom connector with `https://home.tana.inc/mcp`. Keep authentication off-screen.
-5. Give Claude the sanitized public Portable Tana source and show it combining the
+5. Give Claude the sanitized public event source and show it combining the
    shared contract with fresh context from the demo Tana account.
 6. Ask Claude to explain the demo architecture, then retrieve the planned workout
    through `retrieve-workout-plan`.
