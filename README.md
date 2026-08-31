@@ -31,7 +31,7 @@ The included workout example demonstrates the pattern:
 - `skills/log-workout/` — approval-gated write example
 - `examples/build-session/` — sanitized example from a public demo workspace
 - `fixtures/` — frozen inputs for rehearsal and testing
-- `demo/RUNBOOK.md` — live-versus-prepared event sequence
+- `demo/RUNBOOK.md` — live event sequence, rehearsal checks, and safe recovery states
 
 ## Safety
 
