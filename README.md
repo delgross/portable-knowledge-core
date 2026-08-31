@@ -1,4 +1,4 @@
-# One Tana System, Multiple AI Clients
+# Portable Knowledge Core
 
 This starter kit helps you teach an AI what **your** Tana system means, save that
 understanding in a versioned file, and reuse the same system across AI clients.

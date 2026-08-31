@@ -1,4 +1,7 @@
-# System Lab 11: One Tana System, Multiple AI Clients
+# System Lab 11: Portable Knowledge Core — Presenter Runbook
+
+Operational guidance in this file is presenter-only and is intentionally excluded from
+the audience-facing Tana presentation node.
 
 ## Prepared ahead
 
