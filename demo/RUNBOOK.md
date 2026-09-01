@@ -12,6 +12,9 @@ the audience-facing Tana presentation node.
 - Planned workout, exercise vocabulary, frozen inspection, and workout report prepared.
 - Reset fixtures, exact expected payloads, screenshots, and safe recovery states verified.
 - No prerecorded transition clips or substitute demonstration recording prepared.
+- A fresh audience-build GitHub account/fork, Claude account, and sanitized demo Tana
+  workspace are available without exposing credentials or private content.
+- `create-tana-system` and the blank-start request fixture are present in the public fork.
 
 ## Live-only presentation policy
 
@@ -64,25 +67,39 @@ may require an Owner or Primary Owner to add the organization connector.
 
 ## Live sequence
 
-1. Run `discover-tana-system` read-only against the fitness-tracker subsystem.
-2. Show observed, inferred, owner-confirmed, and unresolved lanes.
-3. Generate `TANA_SYSTEM.md` and compare it with the template.
-4. In the Thought of Waves Claude account, demonstrate adding the Tana Outliner remote
-   MCP custom connector with `https://home.tana.inc/mcp`. Keep authentication off-screen.
-5. Give Claude the sanitized public event source and show it combining the
-   shared contract with fresh context from the demo Tana account.
-6. Ask Claude to explain the demo architecture, then retrieve the planned workout
-   through `retrieve-workout-plan`.
-7. On ChatGPT/Codex mobile, repeat the discovery/contract-guided workout retrieval and
-   produce a logging preview from the workout report.
-8. If the Claude Mobile rehearsal passes, repeat the same portable workflow on Claude
-   Mobile using the connector already configured on the same account. This is not a
-   second connector-setup demonstration.
-9. Compare the two results by shared contract and Tana behavior, not by product ranking.
-10. Choose one rehearsed client for the single bounded write: show the exact preview,
-   obtain explicit confirmation, write, and read back every created relationship.
-11. Use the other mobile client to retrieve or summarize the updated workout from Tana.
-12. Close on the portable pattern: one Tana source, one shared contract, multiple clients.
+### Act 1 — Mark's existing portable workout system
+
+1. With the computer off, open the established ChatGPT mobile account connected to the
+   public GitHub source and Tana Remote MCP.
+2. Ask for the current workout. Show that `TANA_SYSTEM.md` and
+   `retrieve-workout-plan` provide meaning while fresh Tana reads provide current facts.
+3. Run the workout in voice mode and report the exact completed sets and changes.
+4. Use `log-workout` to produce the complete structured preview. After explicit
+   confirmation, write once and read back the workout and every set relationship.
+5. Show the completed record in Tana. Establish the promise: the AI can use the system
+   away from the original computer because live data and durable instructions travel.
+
+### Act 2 — An audience system from scratch
+
+6. Begin in a fresh GitHub account with a fork of Portable Knowledge Core, a fresh Claude
+   account, and a sanitized Tana workspace with no relevant subsystem established.
+7. Add and authenticate `https://home.tana.inc/mcp` with credentials off-screen. Confirm
+   the active Claude surface can access both the fork and the connector; do not infer
+   automatic loading of repository files.
+8. Invoke `create-tana-system` with a plain-language goal such as “I want a system for
+   remembering books and the ideas I want to keep.”
+9. Let the Skill inspect the bounded Tana scope. Show that a blank result is valid, then
+   separate observed, inferred, owner-confirmed, and unresolved meaning.
+10. Review the smallest proposed tags, fields, relationships, views, starter nodes,
+    retrieval behavior, write boundaries, `TANA_SYSTEM.md`, and focused Skills.
+11. Approve the exact preview live. Create only that structure through Remote MCP and
+    direct-read every created component.
+12. Save the verified, owner-shaped `TANA_SYSTEM.md` and focused Skills in the fork, with
+    lightweight `CLAUDE.md` and `AGENTS.md` pointers rather than duplicated system meaning.
+13. Run one read-only workflow and one approval-gated capture workflow to prove that the
+    new system can already be operated from its portable instruction layer.
+14. Close on the pattern: Tana holds live structure and records; GitHub holds durable,
+    versioned understanding; clients are replaceable adapters with real integration limits.
 
 If live voice capture is unclear, restate the report live from the exact prepared payload.
 Never let either client skip the preview-confirm-write-readback boundary, and never
@@ -101,6 +118,13 @@ perform duplicate demonstration writes.
 6. Confirm the other client can retrieve the newly written workout from Tana.
 7. Rehearse notification suppression, screen-hiding during authentication, account
    switching, and recovery from one failed bounded read.
+8. From a clean audience-build state, complete the full `create-tana-system` sequence:
+   blank read, clarification, four evidence lanes, complete preview, explicit approval,
+   exact Tana creation, direct readback, contract/Skill generation, and cross-validation.
+9. Confirm the fresh Claude surface can actually read the forked files and use the remote
+   connector. Record any manual file-selection or project-context step required.
+10. Confirm the from-scratch build fits the allotted live time; preselect the vocabulary
+    answers but do not precreate the demonstrated Tana structure.
 
 ## Operational recovery, not substitute presentation
 
@@ -112,5 +136,7 @@ perform duplicate demonstration writes.
    that the account-level connector flow was validated but the event path did not pass.
 6. If write safety cannot be established, do not write; explain which acceptance check
    failed rather than showing a prerecorded replacement.
+7. If the from-scratch target is no longer blank, reset only the documented demo fixture;
+   never delete or redesign unrelated Tana content on stage.
 
 Never troubleshoot authentication, repository indexing, or connector installation on stage.

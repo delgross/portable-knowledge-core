@@ -7,11 +7,15 @@ ROOT = Path(__file__).resolve().parents[1]
 REQUIRED = [
     "README.md",
     "AGENTS.md",
+    "CLAUDE.md",
     "TANA_SYSTEM.template.md",
+    "skills/create-tana-system/SKILL.md",
     "skills/discover-tana-system/SKILL.md",
     "skills/retrieve-workout-plan/SKILL.md",
     "skills/log-workout/SKILL.md",
     "examples/build-session/TANA_SYSTEM.md",
+    "examples/from-scratch/README.md",
+    "fixtures/blank-start-request.md",
     "fixtures/sample-inspection.md",
     "fixtures/sample-workout-report.md",
     "demo/RUNBOOK.md",
@@ -36,6 +40,17 @@ for label, pattern in {
 }.items():
     if re.search(pattern, public_text):
         errors.append(f"public-safety check failed: {label}")
+
+creation_skill = (ROOT / "skills/create-tana-system/SKILL.md").read_text(encoding="utf-8")
+for requirement in [
+    "Observed`, `Inferred`, `Owner-confirmed`, and `Unresolved",
+    "Wait for explicit approval",
+    "Direct-read every created or changed",
+    "TANA_SYSTEM.md",
+    "do not assume automatic repository instruction loading",
+]:
+    if requirement not in creation_skill:
+        errors.append(f"creation-skill contract missing: {requirement}")
 
 if errors:
     print("FAIL")
