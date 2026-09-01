@@ -4,6 +4,12 @@ This is a **proposal preview**, not an installed Tana schema. It demonstrates ho
 `create-tana-system` can begin with “I want to remember what I read and what I learned”
 without imposing the workout example or assuming existing structure.
 
+## Depth used
+
+This compact artifact shows a **Quick Start** result. It is deliberately shallow and
+does not claim full understanding. Guided Discovery would first explore triggers,
+lifecycle, exceptions, habits, scale, privacy, and success criteria in short rounds.
+
 ## Desired behavior
 
 - Add a book to a reading list from desktop or mobile.
@@ -17,6 +23,12 @@ without imposing the workout example or assuming existing structure.
 - **Inferred:** status and takeaways may be useful; both require confirmation.
 - **Owner-confirmed:** the four behaviors above and the vocabulary `Book` and `Takeaway`.
 - **Unresolved:** whether authors should be reusable records and whether ratings matter.
+
+## Explicit assumptions
+
+- One reading status is enough for the first version.
+- Plain-text Author is acceptable until the owner has enough experience to decide.
+- Mobile capture needs no additional fields in v1.
 
 ## Minimum preview
 
@@ -33,3 +45,5 @@ without imposing the workout example or assuming existing structure.
 
 Nothing is written until the owner approves the complete preview. After creation, fresh
 Tana readback—not this proposal—determines the final `TANA_SYSTEM.md`.
+After using v1, the owner should run Guided Discovery to confirm lifecycle, exceptions,
+retrieval needs, and whether the assumptions still hold.

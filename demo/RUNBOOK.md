@@ -88,17 +88,24 @@ may require an Owner or Primary Owner to add the organization connector.
    automatic loading of repository files.
 8. Invoke `create-tana-system` with a plain-language goal such as “I want a system for
    remembering books and the ideas I want to keep.”
-9. Let the Skill inspect the bounded Tana scope. Show that a blank result is valid, then
-   separate observed, inferred, owner-confirmed, and unresolved meaning.
-10. Review the smallest proposed tags, fields, relationships, views, starter nodes,
+9. Use Guided Discovery in short rounds: trigger and success; normal flow and required
+   retrievals; vocabulary and examples; exceptions, habits, privacy, and write boundaries.
+   Summarize contradictions and uncertainty after each round.
+10. Confirm one complete normal workflow, important exceptions, required retrievals,
+    owner vocabulary, and first-version success before allowing architecture design.
+11. Let the Skill inspect the bounded Tana scope. Show that a blank result is valid, then
+    separate observed, inferred, owner-confirmed, and unresolved meaning.
+12. Review the smallest proposed tags, fields, relationships, views, starter nodes,
     retrieval behavior, write boundaries, `TANA_SYSTEM.md`, and focused Skills.
-11. Approve the exact preview live. Create only that structure through Remote MCP and
+13. Approve the exact preview live. Create only that structure through Remote MCP and
     direct-read every created component.
-12. Save the verified, owner-shaped `TANA_SYSTEM.md` and focused Skills in the fork, with
+14. Save the verified, owner-shaped `TANA_SYSTEM.md` and focused Skills in the fork, with
     lightweight `CLAUDE.md` and `AGENTS.md` pointers rather than duplicated system meaning.
-13. Run one read-only workflow and one approval-gated capture workflow to prove that the
+15. Run one read-only workflow and one approval-gated capture workflow to prove that the
     new system can already be operated from its portable instruction layer.
-14. Close on the pattern: Tana holds live structure and records; GitHub holds durable,
+16. Briefly show Quick Start as the lighter alternative: goal, examples, capture/retrieve,
+    explicit assumptions, minimum preview, and an invitation to deepen later.
+17. Close on the pattern: Tana holds live structure and records; GitHub holds durable,
     versioned understanding; clients are replaceable adapters with real integration limits.
 
 If live voice capture is unclear, restate the report live from the exact prepared payload.
@@ -119,8 +126,9 @@ perform duplicate demonstration writes.
 7. Rehearse notification suppression, screen-hiding during authentication, account
    switching, and recovery from one failed bounded read.
 8. From a clean audience-build state, complete the full `create-tana-system` sequence:
-   blank read, clarification, four evidence lanes, complete preview, explicit approval,
-   exact Tana creation, direct readback, contract/Skill generation, and cross-validation.
+   short interview rounds, confirmed understanding gate, blank read, four evidence lanes,
+   complete preview, explicit approval, exact Tana creation, direct readback,
+   contract/Skill generation, and cross-validation.
 9. Confirm the fresh Claude surface can actually read the forked files and use the remote
    connector. Record any manual file-selection or project-context step required.
 10. Confirm the from-scratch build fits the allotted live time; preselect the vocabulary

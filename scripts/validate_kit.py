@@ -48,6 +48,14 @@ for requirement in [
     "Direct-read every created or changed",
     "TANA_SYSTEM.md",
     "do not assume automatic repository instruction loading",
+    "Guided Discovery — default",
+    "Quick Start — explicit option",
+    "short, manageable rounds",
+    "complete normal workflow",
+    "important exceptions",
+    "first-version success criteria",
+    "owner to confirm or correct that understanding",
+    "this is not deep system understanding",
 ]:
     if requirement not in creation_skill:
         errors.append(f"creation-skill contract missing: {requirement}")

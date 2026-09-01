@@ -5,7 +5,8 @@ Treat the contract as shared owner guidance, not proof of current Tana state; ve
 relevant structure through fresh Tana reads and obey its write boundaries.
 
 For a new system, start with `skills/create-tana-system/SKILL.md`. For an existing
-system, start with `skills/discover-tana-system/SKILL.md`.
+system, start with `skills/discover-tana-system/SKILL.md`. New-system creation defaults
+to Guided Discovery; use Quick Start only when the owner requests the lighter path.
 
 This file is a repository entry point, not a claim that every Claude product or GitHub
 connection automatically loads it. If it is not included in the active project context,

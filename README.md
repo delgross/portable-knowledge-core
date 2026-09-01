@@ -18,6 +18,11 @@ client-neutral `TANA_SYSTEM.md` and small workflow skills.
 4. Store the approved contract in your own repository.
 5. Add small workflow skills that depend on the contract rather than duplicating its architecture.
 
+`create-tana-system` defaults to a short-round **Guided Discovery** interview that must
+be confirmed before architecture is proposed. Ask for **Quick Start** when you want only
+a goal, a few examples, and the smallest evolvable first version; its assumptions and
+unresolved meaning stay explicit.
+
 The included workout example demonstrates the pattern:
 
 - retrieve a plan from Tana;

@@ -7,4 +7,5 @@ its write boundaries.
 
 Use focused workflows under `skills/`. When no system exists yet, begin with
 `skills/create-tana-system/SKILL.md`; do not invent or apply a schema without a complete
-preview and explicit owner approval.
+preview and explicit owner approval. Default to its Guided Discovery path unless the
+owner requests Quick Start.

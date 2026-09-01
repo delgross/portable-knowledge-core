@@ -8,12 +8,63 @@ description: Design and, only after explicit approval, create the smallest usefu
 Turn a desired behavior into an owner-shaped, portable Tana system. Do not clone an
 example architecture or write to Tana during discovery and design.
 
+## Choose a depth
+
+- Default to **Guided Discovery** when the owner does not choose.
+- Offer **Quick Start** in the opening so someone can request a smaller first pass.
+- Keep either path conversational. Ask in short, manageable rounds, summarize between
+  rounds, and adapt follow-ups to the answers instead of sending one large questionnaire.
+
+### Guided Discovery — default
+
+Build enough shared understanding to describe how the system should behave before
+proposing its architecture.
+
+Interview in short rounds covering:
+
+1. **Purpose and trigger** — the real-world moment that starts the workflow; what the
+   owner wants to capture, retrieve, decide, review, or change; and first-version success.
+2. **Flow and information** — inputs, outputs, sources, normal lifecycle, meaningful
+   states, required retrievals, frequency, and scale.
+3. **Meaning and evidence** — owner vocabulary and distinctions, real examples,
+   counterexamples, and ambiguous cases.
+4. **Reality and boundaries** — existing habits to support, travel/mobile/voice use,
+   incomplete reports, corrections, duplicates, missed logging, privacy, and write limits.
+
+After each round:
+
+- summarize current understanding in the owner's language;
+- classify claims into `Observed`, `Inferred`, `Owner-confirmed`, and `Unresolved`;
+- surface contradictions and uncertainty; and
+- ask the smallest useful follow-up round.
+
+Do not design yet. First describe at least one complete normal workflow, important exceptions,
+required retrievals, owner vocabulary, and first-version success criteria.
+Ask the owner to confirm or correct that understanding. Begin architecture only after
+they confirm it.
+
+### Quick Start — explicit option
+
+Use when the owner asks to begin with minimal detail or does not yet understand Tana.
+
+Ask only:
+
+- the basic goal;
+- a small number of real examples; and
+- what they most need to capture or retrieve.
+
+Then propose the smallest evolvable first version. Label assumptions and unresolved
+meaning prominently; state that this is not deep system understanding. Keep optional
+extensions separate, preserve the complete preview and explicit approval gate, and
+create only the approved minimum. After the owner gains experience, invite them to run
+Guided Discovery to deepen the contract and workflows.
+
 ## Workflow
 
-1. **Understand the behavior**
-   - Ask what the person wants to capture, retrieve, decide, review, or change.
-   - Use their vocabulary and concrete examples, including likely mobile or voice use.
-   - Identify the smallest successful end-to-end workflow and current write boundary.
+1. **Choose and complete discovery**
+   - Default to Guided Discovery unless the owner requests Quick Start.
+   - Follow the selected path above and retain its depth label in every preview.
+   - Do not interpret willingness to continue as confirmation of the understanding.
 
 2. **Inspect the starting point read-only**
    - Scope the exact workspace or subsystem.
@@ -27,6 +78,8 @@ example architecture or write to Tana during discovery and design.
    - Ask only questions whose answers materially change the design or its safe operation.
 
 4. **Design the minimum viable system**
+   - For Guided Discovery, design only from the owner-confirmed understanding summary.
+   - For Quick Start, design only from the stated goal/examples and label every assumption.
    - Propose only the tags, fields, field types, relationships, hierarchy, templates,
      searches/views, and starter nodes required by the first workflow.
    - Define retrieval behavior, source-of-truth rules, duplicate handling, and write
@@ -43,6 +96,7 @@ example architecture or write to Tana during discovery and design.
      - proposed `TANA_SYSTEM.md` outline;
      - proposed focused Skills; and
      - unresolved questions and excluded extensions.
+   - Include the selected depth and, for Quick Start, a visible limitation statement.
    - State the exact Tana workspace and proposed mutations.
    - Wait for explicit approval. Discussion, corrections, or approval of the concept is
      not approval to write.
@@ -76,6 +130,8 @@ example architecture or write to Tana during discovery and design.
 Before approval, return:
 
 - `desired_behavior`;
+- `discovery_depth`;
+- `understanding_summary`;
 - `starting_state`;
 - `evidence_lanes`;
 - `complete_preview`;
