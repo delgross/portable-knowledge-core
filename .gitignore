@@ -1,0 +1,6 @@
+# Local/private operational bindings
+.private/
+
+# Python build/test artifacts
+__pycache__/
+*.py[cod]
