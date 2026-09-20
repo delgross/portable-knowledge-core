@@ -1,0 +1,22 @@
+# Copy to .private/tana-bindings.yaml and replace every placeholder locally.
+# Never commit the populated file.
+version: 1
+validated_at: "YYYY-MM-DDTHH:MM:SSZ"
+
+bindings:
+  example_workflow:
+    workspace_id: "<private-workspace-id>"
+    destination_node_id: "<private-node-id>"
+    record_tag_id: "<private-tag-id>"
+    fields:
+      primary_field_id: "<private-field-id>"
+    options:
+      primary_option_id: "<private-option-id>"
+    searches:
+      duplicate_search_id: "<private-search-id>"
+
+idempotency:
+  key_version: "<operation-key-version>"
+  designated_writer: "<authorized-writer>"
+  receipt_store: "<private-receipt-store>"
+  lock: "<private-exclusive-lock>"
